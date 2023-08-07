@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: cloud-api-adaptor
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: cloud-api-adaptor
+    app.kubernetes.io/part-of: sandboxed-containers-operator
+  name: cloud-api-adaptor
+spec:
+  ports:
+  - port: 1
+    targetPort: 1
+  selector:
+    app.kubernetes.io/instance: cloud-api-adaptor
+status:
+  loadBalancer: {}
