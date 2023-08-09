@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: must-gather-sandboxed-containers-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: must-gather-sandboxed-containers-operator
+    app.kubernetes.io/part-of: sandboxed-containers-operator
+  name: must-gather-sandboxed-containers-operator
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: must-gather-sandboxed-containers-operator
+status:
+  loadBalancer: {}
