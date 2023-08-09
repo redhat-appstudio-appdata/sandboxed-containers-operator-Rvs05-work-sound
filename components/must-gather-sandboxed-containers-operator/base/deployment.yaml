@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: must-gather-sandboxed-containers-operator
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/crt-dbox-containers-tenant/sandboxed-containers-operator/must-gather-sandboxed-containers-operator@sha256:8fb70288b432fe7fb7e2f01c6484d37f7130bdc3b2050574b8cc0eabc0491fd9
         imagePullPolicy: Always
         name: container-image
         ports:
