@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: must-gather-sandboxed-containers-operator
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/crt-dbox-containers-tenant/sandboxed-containers-operator/must-gather-sandboxed-containers-operator@sha256:8fb70288b432fe7fb7e2f01c6484d37f7130bdc3b2050574b8cc0eabc0491fd9
+        name: container-image
+        resources: {}
+status: {}
