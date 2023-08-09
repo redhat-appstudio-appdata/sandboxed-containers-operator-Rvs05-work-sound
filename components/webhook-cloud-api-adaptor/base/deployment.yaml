@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: webhook-cloud-api-adaptor
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/crt-dbox-containers-tenant/sandboxed-containers-operator/webhook-cloud-api-adaptor@sha256:dab02e576ac1c84c6f5968859e10dfbd9ceacfa3b926f216619368384017c6d9
         imagePullPolicy: Always
         name: container-image
         ports:
