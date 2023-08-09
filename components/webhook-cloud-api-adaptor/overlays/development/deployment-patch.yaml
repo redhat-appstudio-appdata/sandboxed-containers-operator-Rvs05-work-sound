@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: webhook-cloud-api-adaptor
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/crt-dbox-containers-tenant/sandboxed-containers-operator/webhook-cloud-api-adaptor@sha256:dab02e576ac1c84c6f5968859e10dfbd9ceacfa3b926f216619368384017c6d9
+        name: container-image
+        resources: {}
+status: {}

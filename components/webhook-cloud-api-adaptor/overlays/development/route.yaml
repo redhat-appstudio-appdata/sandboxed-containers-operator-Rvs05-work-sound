@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: webhook-cloud-api-adaptor
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: webhook-cloud-api-adaptor
+    app.kubernetes.io/part-of: sandboxed-containers-operator
+  name: webhook-cloud-api-adaptorjaco
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: webhook-cloud-api-adaptor
+    weight: 100
+status: {}
