@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: must-gather-sandboxed-containers-operator
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
