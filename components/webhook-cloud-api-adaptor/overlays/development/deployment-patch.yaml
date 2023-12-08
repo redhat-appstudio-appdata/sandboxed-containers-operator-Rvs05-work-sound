@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: webhook-cloud-api-adaptor
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
